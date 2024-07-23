@@ -10,12 +10,12 @@
   <style>
 html,
 body {
-    margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #000;
@@ -23,47 +23,63 @@ body {
 }
 
 h1{
-color: white
+color: white;
+min-height: 100%;
 }
 
 h2{
-color: yellow
+color: yellow;
 }
 
 .image {
   opacity: 1;
-  display: block;
-  width: 400px;
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  width: 150px;
+  position: relative;
+  justify-content:center;
+  border-radius: 15px;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  max-height: height;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #32a852;
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
   color: white;
+  text-align: middle;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
-  padding: 16px 32px;
+  margin: 2px 2px;
+  transition: 1s;
+  cursor: pointer;
 }
+
+.button1 {
+  width: inherit;
+  height: inherit;
+  padding: 0px 0px;
+  text-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  background-color: black;
+  color: white;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  transition: 0.4s
+}
+
+.button1:hover {
+  background-color: yellow;
+  color: black;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 5px;
@@ -94,39 +110,40 @@ color: yellow
   border-radius: 5px;
   transition: 1 ease;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 </style>
 
 <body>
 <center>
-    <div class="container" style="height=100px">
-        <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=1%">
-        <div class="middle">
-            <div class="text" onclick="window.location.href = 'https://aarushiswinner.netlify.app/Horror';">Download</div>
+    <div>
+        <h1>Choose Your Song!</h1>
+    </div>
+    <div>
+        <img src="./Covers/Aarushiswinner Yo/Horror.jpg" style="width=50px; height=50px" class="image">
+        <div class="image">
+            <a href="https://aarushiswinner.netlify.app/" class="button1">Download!</a>
         </div>
+    </div>
+</center>
+<center>
+    <div>
+        <img src="./Covers/Aarushiswinner Yo/Horror.jpg" style="width=50px; height=50px" class="image">
+        <div class="image">
+            <a href="https://aarushiswinner.netlify.app/" class="button1">Download!</a>
+        </div>
+    </div>
+    <div>
+        <img src="./Covers/Aarushiswinner Yo/Horror.jpg" style="width=50px; height=50px" class="image">
+        <div class="image">
+            <a href="https://aarushiswinner.netlify.app/" class="button1">Download!</a>
+        </div>
+    </div>
+    <div>
+        <img src="./Covers/Aarushiswinner Yo/Horror.jpg" style="width=50px; height=50px" class="image">
+        <div class="image">
+            <a href="https://aarushiswinner.netlify.app/" class="button1">Download!</a>
+        </div>
+    </div>
+
 </center>
   </body>
 </html>
