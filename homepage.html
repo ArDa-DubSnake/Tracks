@@ -121,11 +121,19 @@ text-decoration: none;
 }
 
 .text {
-  background-color: yellow;
-  color: black;
+  transition: .5s ease;
+  background-color: black;
+  color: white;
   font-size: 16px;
+  border: 2px yellow;
+  border-style: solid;
   border-radius: 15px;
   padding: 16px 32px;
+}
+
+.text:hover {
+background: yellow;
+color: black;
 }
 
 ::-webkit-scrollbar {
