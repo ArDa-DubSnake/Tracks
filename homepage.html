@@ -18,6 +18,19 @@ body {
     background: black;
     justify-text: center;
     color: white;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+a:link, a:visited{
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:active, a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 h1{
@@ -33,8 +46,8 @@ color: yellow;
 .container {
   transition: .5s ease;
   position: relative;
-  width: 80%;
-  height: 80%;
+  width: 95%;
+  height: 220px;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -44,6 +57,16 @@ color: yellow;
 }
 
 .songtitle{
+color: white;
+font-size: 30px;
+transition: .5s ease;
+top: 50%;
+left: 75%;
+padding: 20px 10px;
+text-decoration: none;
+}
+
+.songartist{
 color: white;
 font-size: 30px;
 transition: .5s ease;
@@ -77,9 +100,8 @@ text-decoration: none;
 }
 
 .container:hover {
-width: 90%;
+width: 99.5%;
 height: 90%;
-margin-bottom: 100px
 }
 
 .container:hover .image {
@@ -95,6 +117,7 @@ margin-bottom: 100px
 
 .container:hover  .songtitle{
 font-size: 50px;
+text-decoration: none;
 }
 
 .text {
@@ -139,67 +162,33 @@ font-size: 50px;
 
 <body>
 <h1>Hello!</h1>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
+<div class="container">
+  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
+  <div class="middle">
+      <a href="./Songs/Aarushiswinner Yo/Horror.mp3" download="Aarushiswinner Yo - Horror.mp3"><div class="text">Download</div></a>
+  </div>
+  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Horror</a>, <a href="./test.html">Hi</a></div>
+</div>
+<div class="container">
   <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
   <div class="middle">
       <div class="text">Download</div>
   </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
+  <a href="https://aarushiswinner.netlify.app/Horror"><div class="songtitle">Horror</div></a>
+</div>
+<div class="container">
   <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
   <div class="middle">
       <div class="text">Download</div>
   </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
+  <a href="https://aarushiswinner.netlify.app/Horror"><div class="songtitle">Horror</div></a>
+</div>
+<div class="container">
   <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
   <div class="middle">
       <div class="text">Download</div>
   </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
-  <div class="middle">
-      <div class="text">Download</div>
-  </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
-  <div class="middle">
-      <div class="text">Download</div>
-  </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
-  <div class="middle">
-      <div class="text">Download</div>
-  </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
-  <div class="middle">
-      <div class="text">Download</div>
-  </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-<a href="https://aarushiswinner.netlify.app/Horror"><div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Avatar" class="image" style="width=100%">
-  <div class="middle">
-      <div class="text">Download</div>
-  </div>
-  <div class="songtitle">Horror</div>
-</div></a>
-
-
-
-
-
-
+  <a href="https://aarushiswinner.netlify.app/Horror"><div class="songtitle">Horror</div></a>
+</div>
 </body>
 </html>
