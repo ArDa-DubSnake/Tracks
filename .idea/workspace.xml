@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6088422-5498-4d11-9350-55120a4abbab" name="Changes" comment="HELL OF A Work (Modify 10)">
+    <list default="true" id="c6088422-5498-4d11-9350-55120a4abbab" name="Changes" comment="HELL OF A Work (Modify 12)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721807947352</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="HELL OF A Work (Modify 12)">
+      <created>1721808379199</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721808379199</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,6 +184,7 @@
     <MESSAGE value="A bit of Work (Modify 5)" />
     <MESSAGE value="A bit of Work (Modify 7)" />
     <MESSAGE value="HELL OF A Work (Modify 10)" />
-    <option name="LAST_COMMIT_MESSAGE" value="HELL OF A Work (Modify 10)" />
+    <MESSAGE value="HELL OF A Work (Modify 12)" />
+    <option name="LAST_COMMIT_MESSAGE" value="HELL OF A Work (Modify 12)" />
   </component>
 </project>
