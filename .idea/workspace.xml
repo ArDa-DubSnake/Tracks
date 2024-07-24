@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6088422-5498-4d11-9350-55120a4abbab" name="Changes" comment="HELL OF A Work (Modify 12)" />
+    <list default="true" id="c6088422-5498-4d11-9350-55120a4abbab" name="Changes" comment="HELL OF A Work (Modify 12)">
+      <change afterPath="$PROJECT_DIR$/Songs/Aarushiswinner Yo/Aarushiswinner Yo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Songs/Nature's mistake/タイトル 夢の中で.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,11 +51,11 @@
       <recent name="C:\Users\aarus\Documents\GitHub\Tracks\Songs\Aarushiswinner Yo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Songs" />
       <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Covers\Covers" />
       <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Covers" />
       <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Covers\November Storm" />
       <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Covers\SLeo" />
-      <recent name="D:\Users\Phimphist\Documents\GitHub\Tracks\Covers\kenty" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -195,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721832745518</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="HELL OF A Work (Modify 12)">
+      <created>1721833284443</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721833284443</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
