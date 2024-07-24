@@ -36,7 +36,7 @@ a:active, a:hover {
 h1{
 color: white;
 color: white;
-margin-left: 50%
+margin-left: 50%;
 }
 
 h2{
@@ -60,21 +60,25 @@ color: yellow;
 
 .songtitle{
 color: white;
-font-size: 30px;
+font-size: 80px;
 transition: .5s ease;
 top: 50%;
 left: 75%;
-padding: 20px 10px;
+padding: 10px 20px;
 text-decoration: none;
 }
 
 .songartist{
+transition: 0.5s ease;
 color: white;
-font-size: 30px;
-transition: .5s ease;
-top: 50%;
-left: 75%;
-padding: 20px 10px;
+font-size: 25px;
+text-decoration: none;
+}
+
+.genre{
+transition: 0.5s ease;
+colr: white;
+font-size: 20px;
 text-decoration: none;
 }
 
@@ -120,6 +124,20 @@ height: 90%;
 .container:hover  .songtitle{
 font-size: 50px;
 text-decoration: none;
+display: flex;
+flex-direction: column;
+}
+
+.container:hover  .songartist{
+font-size: 40px;
+text-decoration: none;
+}
+
+.container:hover  .genre{
+font-size: 30px;
+display: flex;
+flex-direction: column;
+text-decoration: none;
 }
 
 .text {
@@ -139,9 +157,9 @@ color: black;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   border-radius: 5px;
-  transition: 1 ease;
+  transition: 1s ease;
   transform: translate(-50%, -50%);
 }
 
@@ -149,7 +167,7 @@ color: black;
 ::-webkit-scrollbar-track {
   background: #212121;
   border-radius: 5px;
-  transition: 1 ease;
+  transition: 1s ease;
   transform: translate(-50%, -50%);
 
 }
@@ -158,7 +176,7 @@ color: black;
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 3.5px;
-  transition: 1 ease;
+  transition: 1s ease;
   transform: translate(-50%, -50%);
 }
 
@@ -166,18 +184,20 @@ color: black;
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
   border-radius: 5px;
-  transition: 1 ease;
+  transition: 1s ease;
 }
 </style>
 
 <body>
 <h1>Hello!</h1>
 <div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%">
-  <a href="./Songs/Aarushiswinner Yo/Horror.mp3" download="Aarushiswinner Yo - Horror.mp3"><div class="middle">
+  <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
-  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Horror</a></div>
+  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Good Times Aheaed</a>
+  <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div></div>
 </div>
 <div class="container">
   <img src="./Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%">
