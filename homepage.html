@@ -5,7 +5,6 @@
     <title>ArDa Dubsnake - Free Non-Copyright Music For Everyone!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="preload" as="image" href="./Covers/Aarushiswinner Yo/Horror.jpg">
   </head>
   <style>
 html,
@@ -123,18 +122,23 @@ margin: 0px;
 max-height: 70px;
 }
 
-.topnavhome:hover, .topnavhome:active{
+.topnavhome:hover{
 background: #4b4b4b;
 border-radius: 5px;
 border-top-right-radius: 5px;
-color: yellow;
+animation-name: rgbcycle;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 }
 
 .topnavgenres:hover{
 text-align: center;
 padding: 10px 30px;
+font-size: 20px;
 grid-template-columns: 1fr 1fr;
-color: yellow;
+animation-name: rgbcycle;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 margin: 2px;
 border-radius: 5px;
 }
@@ -142,17 +146,17 @@ border-radius: 5px;
 .topnavgenres:hover .topnavgenredrop{
 opacity: 100%;
 font-size: 20px;
-padding: 5px 30px;
+padding: 10px 30px;
 border-radius: 5px;
 text-align: center;
-margin: 10px;
+margin: 5px;
 }
 
 .topnavgenredrop:hover{
 text-align: center;
 background: #4b4b4b;
 animation-name: rgbcycle;
-animation-duration: 5s;
+animation-duration: 10s;
 animation-iteration-count: infinite;
 }
 
@@ -162,6 +166,14 @@ animation-iteration-count: infinite;
 33% {color: cyan}
 66% {color: #58f565}
 100% {color: red}
+}
+
+@keyframes rgbcyclebg{
+0% {background: red; border: red;}
+16.5% {background: yellow; border: yellow;}
+33% {background: cyan; border: cyan;}
+66% {background: #58f565; border: #58f565;}
+100% {background: red; border: red;}
 }
 
 .songartist{
@@ -177,13 +189,19 @@ color: white;
 font-size: 20px;
 text-decoration: none;
 }
+.releaseDate{
+transition: 0.5s ease;
+color: white;
+font-size: 20px;
+text-decoration: none;
+}
 
 .image {
   opacity: 1;
   display: flex;
   flex-direction: row;
   width: 220px;
-  height: auto;
+  height: 220px;
   border-radius: 15px;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -193,8 +211,8 @@ text-decoration: none;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 110px;
-  left: 110px;
+  top: 80%;
+  left: 305px;
   border-radius: 15px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -203,18 +221,19 @@ text-decoration: none;
 
 .container:hover {
 width: 99%;
-height: 75%;
+height: 300px;
 }
 
 .container:hover .image {
-  opacity: 0.5;
+  opacity: 1;
   width: 300px;
+  height: 300px;
 }
 
 .container:hover .middle {
   opacity: 1;
-  top: 150px;
-  left: 150px;
+  top: 85%;
+  left: 385px;
 }
 
 .container:hover  .songtitle{
@@ -234,19 +253,26 @@ font-size: 20px;
 text-decoration: none;
 }
 
+.container:hover  .releaseDate{
+font-size: 20px;
+text-decoration: none;
+}
+
 .text {
-  transition: .5s ease;
+  transition: 1s ease;
   background-color: black;
   color: white;
   font-size: 16px;
-  border: 2px yellow;
+  border: 2px red;
   border-style: solid;
   border-radius: 15px;
-  padding: 16px 32px;
+  padding: 16px 35px;
 }
 
 .text:hover {
-background: yellow;
+animation-name: rgbcyclebg;
+animation-duration: 10s;
+animation-iteration-count: infinite;
 color: black;
 }
 
@@ -289,35 +315,159 @@ color: black;
   </a>
   <div class="topnavgenres" style="border:inherit">Genres
     <div style="display: flex"></div>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">test</div></a>
+    <a href="./Genres/Ambient.html"><div class="topnavgenredrop">Ambient</div></a>
+    <a href="./Genres/House.html"><div class="topnavgenredrop">House</div></a>
+    <a href="./Genres/BassHouse.html"><div class="topnavgenredrop">Bass House</div></a>
+    <a href="./Genres/IndieDance.html"><div class="topnavgenredrop">Indie Dance</div></a>
+    <a href="./Genres/ChillStep.html"><div class="topnavgenredrop">Chill Step</div></a>
+    <a href="./Genres/Jazz.html"><div class="topnavgenredrop">Jazz</div></a>
+    <a href="./Genres/DeepHouse.html"><div class="topnavgenredrop">Deep House</div></a>
+    <a href="./Genres/JerseyClub.html"><div class="topnavgenredrop">Jersey Club</div></a>
+    <a href="./Genres/DnB.html"><div class="topnavgenredrop">Drum & Bass</div></a>
+    <a href="./Genres/LoFi.html"><div class="topnavgenredrop">Lo-Fi</div></a>
+    <a href="./Genres/Drumstep.html"><div class="topnavgenredrop">Drumstep</div></a>
+    <a href="./Genres/J-Pop.html"><div class="topnavgenredrop">J-Pop</div></a>
+    <a href="./Genres/Dubstep.html"><div class="topnavgenredrop">Dubstep</div></a>
+    <a href="./Genres/NeiroFunk.html"><div class="topnavgenredrop">Neiro Funk</div></a>
+    <a href="./Genres/Electronic.html"><div class="topnavgenredrop">Electronic</div></a>
+    <a href="./Genres/NewBeat.html"><div class="topnavgenredrop">New Beat</div></a>
+    <a href="./Genres/FutureBass.html"><div class="topnavgenredrop">Future Bass</div></a>
+    <a href="./Genres/Phonk.html"><div class="topnavgenredrop">Phonk</div></a>
+    <a href="./Genres/FutureHouse.html"><div class="topnavgenredrop">Future House</div></a>
+    <a href="./Genres/Rock.html"><div class="topnavgenredrop">Rock</div></a>
+    <a href="./Genres/GlitchHop.html"><div class="topnavgenredrop">Glitch Hop</div></a>
+    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">Synthwave</div></a>
+    <a href="./Genres/Hardstyle.html"><div class="topnavgenredrop">Hardstyle</div></a>
+    <a href="./Genres/Trap.html"><div class="topnavgenredrop">Trap</div></a>
+    <a href="./Genres/HipHop.html"><div class="topnavgenredrop">Hip-Hop</div></a>
+    <a href="./Genres/Other.html"><div class="topnavgenredrop">Other</div></a>
   </div>
 </div>
 <h1>Hello!</h1>
+
+<div class="container">
+  <img src="./Covers/none/default.jpeg" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Nature's Mistake/夢の中で.mp3" download="Nature's Mistake - 夢の中で.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/Nature's Mistake/夢の中で.html">夢の中で</a>
+  <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Nature's Mistake</a></div>
+  <div class="genre"><a href="./J-Pop.html">J-Pop</a></div>
+  <div class="releaseDate">Released: 25/07/2024</div>
+  </div>
+</div>
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html">Good Times Ahead</a>
+    <div class="songartist"><a href="./Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+    <div class="genre"><a href="./Synthwave.html">Synthwave</a></div>
+    <div class="releaseDate">Released: 24/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./Covers/none/default.jpeg" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/SLeo/Unreal.mp3" download="SLeo - Unreal.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/SLeo/Unreal.html">Unreal</a>
+    <div class="songartist"><a href="./Songs/SLeo.html">SLeo</a></div>
+    <div class="genre"><a href="./ChillStep.html">Chill Step</a></div>
+    <div class="releaseDate">Released: 23/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./Covers/Pakto/THE GROW!.PNG" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Pakto/THE GROW!.mp3" download="Pakto - THE GROW!"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/Pakto/THEGROW.html">THE GROW!</a>
+    <div class="songartist"><a href="./Songs/Pakto.html">Pakto</a></div>
+    <div class="genre"><a href="./Phonk.html">Phonk</a></div>
+    <div class="releaseDate">Released: 22/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./Covers/none/default.jpeg" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="./Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./Covers/none/default.jpeg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/EJohan/Enjoy.mp3" download="EJohan - Enjoy.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/EJohan/Enjoy.html">Enjoy</a>
+  <div class="songartist"><a href="./Songs/EJohan.html">EJohan</a></div>
+  <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
+</div>
+
+<div class="container">
+  <img src="./Covers/Aarushiswinner Yo/horror.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Horror.mp3" download="Aarushiswinner Yo - Horror.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="./Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="./Covers/SLeo/Darkness.png" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/SLeo/Darkness.mp3" download="SLeo - Darkness.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="./Songs/SLeo/Darkness.html">Darkness</a>
+    <div class="songartist"><a href="./Songs/SLeo.html">SLeo</a></div>
+    <div class="genre"><a href="./Dubstep.html">Dubstep</a></div>
+    <div class="releaseDate">Released: 15/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Good Times Ahead</a>
+  <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
+</div>
+
+<div class="container">
+  <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Good Times Ahead</a>
+  <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
+</div>
+
+<div class="container">
+  <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="https://aarushiswinner.netlify.app/Horror">Good Times Ahead</a>
+  <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
+</div>
+
 <div class="container">
   <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
@@ -328,7 +478,7 @@ color: black;
   <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
 </div>
 <div class="container">
-  <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%"></a>
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -336,6 +486,7 @@ color: black;
   <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
   <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
 </div>
+
 <div class="container">
   <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
@@ -345,6 +496,7 @@ color: black;
   <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
   <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
 </div>
+
 <div class="container">
   <img src="./Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%">
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
@@ -354,5 +506,8 @@ color: black;
   <div class="songartist"><a href="https://aarushiswinner.netlify.app/Horror">Aarushiswinner Yo</a></div>
   <div class="genre"><a href="./Synthwave.html">Synthwave</a></div></div>
 </div>
+<footer>
+  <p><center>© 2024 ArDa Dubsnake</center></p>
+</footer>
 </body>
 </html>
