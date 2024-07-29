@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Trap - ArDa Dubsnake</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
+
+<script>
+  let contained=document.querySelector('.container');
+  let containedYinit=contained.getBoundingClientRect().y;
+  window.addEventListener("scroll", function(e) {
+  let total = $(document).height();
+
+  let current = window.scrollY;
+
+  let per = (current / total)
+
+  contained.style.up = -(containedYinit * per * 1.25) + tri1XInitial +  "px";
+  });
+</script>
+
 <style>
 html,
 body {
-    padding: 0;
+    padding: 0px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: black;
     justify-text: center;
     color: white;
     overflow-x: hidden;
     max-width: 100%;
+    background: black;
 }
 a:link, a:visited{
 color: white;
@@ -42,6 +58,7 @@ color: yellow;
 }
 
 .container {
+  background-color: black;
   transition: .5s ease;
   position: relative;
   width: 95%;
@@ -49,7 +66,7 @@ color: yellow;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
   background: #1e1e1e;
@@ -194,6 +211,12 @@ font-size: 20px;
 text-decoration: none;
 }
 
+.bgimg{
+position: static;
+width: 100%;
+height: 500px;
+}
+
 .image {
   opacity: 1;
   display: flex;
@@ -313,49 +336,39 @@ color: black;
   </a>
   <div class="topnavgenres" style="border:inherit">Genres
     <div style="display: flex"></div>
-    <a href="./Genres/Ambient.html"><div class="topnavgenredrop">Ambient</div></a>
-    <a href="./Genres/House.html"><div class="topnavgenredrop">House</div></a>
-    <a href="./Genres/BassHouse.html"><div class="topnavgenredrop">Bass House</div></a>
-    <a href="./Genres/IndieDance.html"><div class="topnavgenredrop">Indie Dance</div></a>
-    <a href="./Genres/ChillStep.html"><div class="topnavgenredrop">Chill Step</div></a>
-    <a href="./Genres/Jazz.html"><div class="topnavgenredrop">Jazz</div></a>
-    <a href="./Genres/DeepHouse.html"><div class="topnavgenredrop">Deep House</div></a>
-    <a href="./Genres/JerseyClub.html"><div class="topnavgenredrop">Jersey Club</div></a>
-    <a href="./Genres/DnB.html"><div class="topnavgenredrop">Drum & Bass</div></a>
-    <a href="./Genres/LoFi.html"><div class="topnavgenredrop">Lo-Fi</div></a>
-    <a href="./Genres/Drumstep.html"><div class="topnavgenredrop">Drumstep</div></a>
-    <a href="./Genres/NA.html"><div class="topnavgenredrop">NA</div></a>
-    <a href="./Genres/Dubstep.html"><div class="topnavgenredrop">Dubstep</div></a>
-    <a href="./Genres/NeiroFunk.html"><div class="topnavgenredrop">Neiro Funk</div></a>
-    <a href="./Genres/Electronic.html"><div class="topnavgenredrop">Electronic</div></a>
-    <a href="./Genres/NewBeat.html"><div class="topnavgenredrop">New Beat</div></a>
-    <a href="./Genres/FutureBass.html"><div class="topnavgenredrop">Future Bass</div></a>
-    <a href="./Genres/Phonk.html"><div class="topnavgenredrop">Phonk</div></a>
-    <a href="./Genres/FutureHouse.html"><div class="topnavgenredrop">Future House</div></a>
-    <a href="./Genres/Rock.html"><div class="topnavgenredrop">Rock</div></a>
-    <a href="./Genres/GlitchHop.html"><div class="topnavgenredrop">Glitch Hop</div></a>
-    <a href="./Genres/Synthwave.html"><div class="topnavgenredrop">Synthwave</div></a>
-    <a href="./Genres/Hardstyle.html"><div class="topnavgenredrop">Hardstyle</div></a>
-    <a href="./Genres/Trap.html"><div class="topnavgenredrop">Trap</div></a>
-    <a href="./Genres/HipHop.html"><div class="topnavgenredrop">Hip-Hop</div></a>
-    <a href="./Genres/Other.html"><div class="topnavgenredrop">Other</div></a>
-  </div>
-</div>
-<h1>Trap</h1>
-<div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
-      <div class="text">Download</div>
-  </div></a>
-  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
-  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
-  <div class="genre"><a href="./Trap.html">Trap</a></div>
-  <div class="releaseDate"></div>
+    <a href="../Genres/Ambient.html"><div class="topnavgenredrop">Ambient</div></a>
+    <a href="../Genres/House.html"><div class="topnavgenredrop">House</div></a>
+    <a href="../Genres/BassHouse.html"><div class="topnavgenredrop">Bass House</div></a>
+    <a href="../Genres/IndieDance.html"><div class="topnavgenredrop">Indie Dance</div></a>
+    <a href="../Genres/ChillStep.html"><div class="topnavgenredrop">Chill Step</div></a>
+    <a href="../Genres/Jazz.html"><div class="topnavgenredrop">Jazz</div></a>
+    <a href="../Genres/DeepHouse.html"><div class="topnavgenredrop">Deep House</div></a>
+    <a href="../Genres/JerseyClub.html"><div class="topnavgenredrop">Jersey Club</div></a>
+    <a href="../Genres/DnB.html"><div class="topnavgenredrop">Drum & Bass</div></a>
+    <a href="../Genres/LoFi.html"><div class="topnavgenredrop">Lo-Fi</div></a>
+    <a href="../Genres/Drumstep.html"><div class="topnavgenredrop">Drumstep</div></a>
+    <a href="../Genres/NA.html"><div class="topnavgenredrop">NA</div></a>
+    <a href="../Genres/Dubstep.html"><div class="topnavgenredrop">Dubstep</div></a>
+    <a href="../Genres/NeiroFunk.html"><div class="topnavgenredrop">Neiro Funk</div></a>
+    <a href="../Genres/Electronic.html"><div class="topnavgenredrop">Electronic</div></a>
+    <a href="../Genres/NewBeat.html"><div class="topnavgenredrop">New Beat</div></a>
+    <a href="../Genres/FutureBass.html"><div class="topnavgenredrop">Future Bass</div></a>
+    <a href="../Genres/Phonk.html"><div class="topnavgenredrop">Phonk</div></a>
+    <a href="../Genres/FutureHouse.html"><div class="topnavgenredrop">Future House</div></a>
+    <a href="../Genres/Rock.html"><div class="topnavgenredrop">Rock</div></a>
+    <a href="../Genres/GlitchHop.html"><div class="topnavgenredrop">Glitch Hop</div></a>
+    <a href="../Genres/Synthwave.html"><div class="topnavgenredrop">Synthwave</div></a>
+    <a href="../Genres/Hardstyle.html"><div class="topnavgenredrop">Hardstyle</div></a>
+    <a href="../Genres/Trap.html"><div class="topnavgenredrop">Trap</div></a>
+    <a href="../Genres/HipHop.html"><div class="topnavgenredrop">Hip-Hop</div></a>
+    <a href="../Genres/Other.html"><div class="topnavgenredrop">Other</div></a>
   </div>
 </div>
 
+<img src="../Covers/Genres/Trap.jpg" class="bgimg">
+<span style="background-color: black;">
 <div class="container">
-  <img src="../Covers/none/default.jpeg" alt="Cover" class="image" style="width=100%">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
   <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -365,6 +378,108 @@ color: black;
     <div class="releaseDate">Released: 20/07/2024</div>
   </div>
 </div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div><div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div><div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div><div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div>
+</span>
 
 <footer>
   <p><center>© 2024 ArDa Dubsnake</center></p>

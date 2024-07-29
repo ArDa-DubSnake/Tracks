@@ -1,10 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Aarushiswinner Yo - ArDa Dubsnake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
-<body>
+<style>
+.avatar{
+    transition: .5s ease;
+    border-radius: 1000px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    }
+.artistName{
+transition: .5s ease;
+margin-left: 20px;
+margin-top: 75px;
+height: 65px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: rgba(43,43,43,0);
+width: 650px;
+color: white;
+font-size: 50px;
+display: flex;
+white-space: nowrap;
+text-overflow: ellipsis;
+flex-direction: row;
+border-radius: 15px;
+font-family: Arial;
+text-decoration: none;
+}
 
+.nameBg{
+display: flex;
+flex-direction: row;
+transition: .5s ease;
+width: 4500px;
+height: 325px;
+background-color: rgba(43,43,43,.5);
+border-radius: 15px;
+}
+
+.socials{
+transition: .5s ease;
+width: 450px;
+height: 65px;
+font-size: 50px;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 15px;
+padding: 15px;
+margin-top: 15px;
+margin-left: 10px;
+background-color: rgba(43,43,43,.5);
+}
+
+.socialPanel{
+align-items: center;
+justify-content: center;
+}
+
+.mainInfo{
+align-items: center;
+justify-content: left;
+display: flex;
+flex-direction: row;
+}
+
+.socials:hover{
+font-size: 75;
+height: 80px;
+width: 500px;
+padding: 30px;
+}
+
+.socials:hover .infor{
+height:100px;
+}
+
+.socials:hover .nameBg{
+height:4900px;
+}
+
+.infor:hover .socialPanel{
+width:450px;
+height: 1000px;
+}
+
+.infor:hover .avatar{
+width: 350px;
+height: 350px;
+}
+.infor:hover .artistName{
+font-size: 60px;
+margin-top: 125px;
+font-weight: 400;
+padding: 15px;
+height: 80px;
+width: 500px;
+}
+.infor:hover .nameBg{
+width: 6000px;
+height: 450px;
+}
+
+.infor:hover .socials{
+font-size: 60px;
+margin-top: 125px;
+font-weight: 400;
+padding: 15px;
+height: 80px;
+width: 500px;
+}
+
+html,
+body {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    justify-text: center;
+    color: white;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: ui;
+}
+a:link, a:visited{
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:active, a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h1{
+color: white;
+color: white;
+margin-left: 50%;
+font-size: 35px;
+}
+
+h2{
+color: yellow;
+}
+
+.infor{
+transition: .5s ease;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 10px;
+width: 800px;
+height: 320px;
+display: flex;
+flex-direction: row;
+}
+
+.infor:hover{
+width: 950px;
+height: 450px;
+}
+
+.container {
+  transition: .5s ease;
+  position: relative;
+  width: 95%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #1e1e1e;
+  border-radius: 15px;
+}
+
+.songtitle{
+color: white;
+font-size: 80px;
+transition: .5s ease;
+top: 50%;
+left: 75%;
+padding: 10px 20px;
+font-family: fantasy;
+text-decoration: none;
+}
+
+.topnav {
+transition: 0.5s ease;
+border-radius: 5px;
+background: #1e1e1e;
+display: flex;
+flex-direction: row;
+}
+
+.topnavhome{
+transition: 0.5s ease;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+border-bottom-right-radius: 0px;
+border-top-right-radius: 0px;
+font-size: 15px;
+padding: 10px 30px;
+background: #2b2b2b;
+color: white;
+margin: 1px;
+}
+
+.topnav a{
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+.topnavgenres{
+flex-direction: column;
+transition: 1s ease;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 5px;
+font-size: 15px;
+padding: 8px 30px;
+background: #2b2b2b;
+color: white;
+text-decoration: none;
+display: inline-grid;
+grid-template-columns: 1fr 0fr;
+text-align: center;
+margin: 1px;
+max-height: 800px;
+}
+.topnavgenredrop{
+transition: 1s ease;
+display: block;
+opacity: 0%;
+padding: inherit inherit;
+font-size: 0px;
+background: #2b2b2b;
+color: white;
+margin: 0px;
+max-height: 70px;
+}
+
+.topnavhome:hover{
+background: #4b4b4b;
+border-radius: 5px;
+border-top-right-radius: 5px;
+animation-name: rgbcycle;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+.topnavgenres:hover{
+text-align: center;
+padding: 10px 30px;
+font-size: 20px;
+grid-template-columns: 1fr 1fr;
+animation-name: rgbcycle;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+margin: 2px;
+border-radius: 5px;
+}
+
+.topnavgenres:hover .topnavgenredrop{
+opacity: 100%;
+font-size: 20px;
+padding: 10px 30px;
+border-radius: 5px;
+text-align: center;
+margin: 5px;
+}
+
+.topnavgenredrop:hover{
+text-align: center;
+background: #4b4b4b;
+animation-name: rgbcycle;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+@keyframes rgbcycle{
+0% {color: red}
+16.5% {color: yellow}
+33% {color: cyan}
+66% {color: #58f565}
+100% {color: red}
+}
+
+@keyframes rgbcyclebg{
+0% {background: red; border: red;}
+16.5% {background: yellow; border: yellow;}
+33% {background: cyan; border: cyan;}
+66% {background: #58f565; border: #58f565;}
+100% {background: red; border: red;}
+}
+
+.songartist{
+transition: 0.5s ease;
+color: white;
+font-size: 25px;
+font-family: serif;
+text-decoration: none;
+}
+
+.genre{
+transition: 0.5s ease;
+color: white;
+font-size: 20px;
+font-family: serif;
+text-decoration: none;
+}
+.releaseDate{
+transition: 0.5s ease;
+color: white;
+font-size: 20px;
+font-family: serif;
+text-decoration: none;
+}
+
+.image {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 305px;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover {
+width: 99%;
+height: 300px;
+}
+
+.container:hover .image {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  top: 85%;
+  left: 385px;
+}
+
+.container:hover  .songtitle{
+font-size: 50px;
+text-decoration: none;
+display: flex;
+flex-direction: column;
+}
+
+.container:hover  .songartist{
+font-size: 35px;
+text-decoration: none;
+}
+
+.container:hover  .genre{
+font-size: 20px;
+text-decoration: none;
+}
+
+.container:hover  .releaseDate{
+font-size: 20px;
+text-decoration: none;
+}
+
+.text {
+  transition: 1s ease;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: 2px red;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 16px 35px;
+}
+
+.text:hover {
+animation-name: rgbcyclebg;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+color: black;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 5px;
+  transition: 1s ease;
+  transform: translate(-50%, -50%);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 5px;
+  transition: 1s ease;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3.5px;
+  transition: 1s ease;
+  transform: translate(-50%, -50%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 5px;
+  transition: 1s ease;
+}
+</style>
+<body>
+<div class="topnav">
+  <a href="../homepage.html">
+    <button class="topnavhome" style="border: inherit;">Homepage</button>
+  </a>
+  <button class="topnavgenres" style="border: inherit">Genres
+    <div style="display: flex"></div>
+    <a href="../Genres/Ambient.html"><div class="topnavgenredrop">Ambient</div></a>
+    <a href="../Genres/House.html"><div class="topnavgenredrop">House</div></a>
+    <a href="../Genres/BassHouse.html"><div class="topnavgenredrop">Bass House</div></a>
+    <a href="../Genres/IndieDance.html"><div class="topnavgenredrop">Indie Dance</div></a>
+    <a href="../Genres/ChillStep.html"><div class="topnavgenredrop">Chill Step</div></a>
+    <a href="../Genres/Jazz.html"><div class="topnavgenredrop">Jazz</div></a>
+    <a href="../Genres/DeepHouse.html"><div class="topnavgenredrop">Deep House</div></a>
+    <a href="../Genres/JerseyClub.html"><div class="topnavgenredrop">Jersey Club</div></a>
+    <a href="../Genres/DnB.html"><div class="topnavgenredrop">Drum & Bass</div></a>
+    <a href="../Genres/LoFi.html"><div class="topnavgenredrop">Lo-Fi</div></a>
+    <a href="../Genres/Drumstep.html"><div class="topnavgenredrop">Drumstep</div></a>
+    <a href="../Genres/Dubstep.html"><div class="topnavgenredrop">Dubstep</div></a>
+    <a href="../Genres/NeiroFunk.html"><div class="topnavgenredrop">Neiro Funk</div></a>
+    <a href="../Genres/Electronic.html"><div class="topnavgenredrop">Electronic</div></a>
+    <a href="../Genres/NewBeat.html"><div class="topnavgenredrop">New Beat</div></a>
+    <a href="../Genres/FutureBass.html"><div class="topnavgenredrop">Future Bass</div></a>
+    <a href="../Genres/Phonk.html"><div class="topnavgenredrop">Phonk</div></a>
+    <a href="../Genres/FutureHouse.html"><div class="topnavgenredrop">Future House</div></a>
+    <a href="../Genres/Rock.html"><div class="topnavgenredrop">Rock</div></a>
+    <a href="../Genres/GlitchHop.html"><div class="topnavgenredrop">Glitch Hop</div></a>
+    <a href="../Genres/Synthwave.html"><div class="topnavgenredrop">Synthwave</div></a>
+    <a href="../Genres/Hardstyle.html"><div class="topnavgenredrop">Hardstyle</div></a>
+    <a href="../Genres/Trap.html"><div class="topnavgenredrop">Trap</div></a>
+    <a href="../Genres/J-Pop.html"><div class="topnavgenredrop">N/A</div></a>
+    <a href="../Genres/HipHop.html"><div class="topnavgenredrop">Hip-Hop</div></a>
+    <a href="../Genres/Other.html"><div class="topnavgenredrop">Other</div></a>
+  </button>
+</div>
+<div class="mainInfo">
+  <div class="infor">
+    <div class="nameBg">
+      <div class="avatar">
+        <img src="../Avatars/Aarushiswinner Yo.png" alt="Avatar" class="avatar" style="margin: 0px; padding: 0px">
+        <div class="artistName">Aarushiswinner Yo</div>
+      </div>
+    </div>
+  </div>
+  <div class="socialsPanel" style="flex-direction: column">
+    <a href="https://instagram.com/aarushiswinner_yo" style="text-decoration: none">
+      <div class="socials" style="flex-direction: row">
+        <img src="../Icons/insta.png" alt="insta" style="width:50px; height: 50px; margin: 0px; padding: 0px">
+        Instagram
+    </div></a>
+    <a href="https://youtube.com/@aarushiswinner_yo" style="text-decoration: none"><div class="socials">
+      <img src="../Icons/yt.png" alt="insta" style="width:50px; height: 50px; margin: 0px; padding: 0px">
+     YouTube
+    </div></a>
+    <a href="https://discord.gg/gDYwCKk3am" style="text-decoration: none"><div class="socials">
+      <img src="../Icons/discord.png" alt="insta" style="width:50px; height: 50px; margin: 0px; padding: 0px">
+     Discord
+    </div></a>
+  </div>
+</div>
+<div class="container">
+  <a href="../Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Good Times Ahead.png" alt="Cover" class="image" style="width=100%"></a>
+  <a href="../Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Good Times Ahead.html">Good Times Ahead</a>
+    <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+    <div class="genre"><a href="../Genres/Synthwave.html">Synthwave</a></div>
+    <div class="releaseDate">Released: 24/07/2024</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="../Genres/Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Covers/Aarushiswinner Yo/horror.jpg" alt="Cover" class="image" style="width=100%">
+  <a href="../Songs/Aarushiswinner Yo/Horror.mp3" download="Aarushiswinner Yo - Horror.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="../Genres/Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div>
 </body>
 </html>
