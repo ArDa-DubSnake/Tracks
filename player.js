@@ -1,11 +1,7 @@
-const audio = 
-    document.getElementById('myAudio');
-const playPauseBtn = 
-    document.getElementById('playPauseBtn');
-const progressBar = 
-    document.getElementById('progressBar');
-const volumeControl = 
-    document.getElementById('volumeControl');
+const audio = document.getElementById('myAudio');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const progressBar = document.getElementById('progressBar');
+const volumeControl = document.getElementById('volumeControl');
 
 let isPlaying = false;
 
@@ -25,9 +21,11 @@ function togglePlay() {
     if (isPlaying) {
         audio.pause();
         playPauseBtn.textContent = 'Play';
+        playPauseBtn.style = 'color: black; background-color: #368d98;';
     } else {
         audio.play();
         playPauseBtn.textContent = 'Pause';
+        playPauseBtn.style = 'color: white; background-color: black;';
     }
     isPlaying = !isPlaying;
 }

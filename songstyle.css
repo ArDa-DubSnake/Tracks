@@ -2,6 +2,45 @@ body{
     background-color: black;
 }
 
+.coverImage{
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 400px;
+    margin: 10px;
+    font-size: 50px;
+    background-position: -100px;
+    border-radius: 15px;
+    opacity: .8;
+    justify-content: center;
+}
+
+.coverImage img{
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 375px;
+    align-items: center;
+    font-size: 50px;
+    margin-left: 25px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.coverImage:hover{
+    height: 500px;
+    opacity: 1;
+}
+
+.coverImage:hover img{
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+    margin: 0px;
+}
+
 .audio-container {
     position: relative;
     margin-top: 20px;
@@ -15,9 +54,9 @@ body{
 .progress-container {
     height: 7px;
     margin: 0 10px;
-    width: 80%;
+    width: 95%;
     border-radius: 15px;
-    background-color: #A8A8A8;
+    background-color: #368d98;
 }
 
 .volume-container {
@@ -27,6 +66,8 @@ body{
     margin-top: 15px;
     width: 10%;
     align-items: center;
+    justify-content: center;
+    color: #368d98;
 }
 
 .volume-container>svg {
@@ -54,8 +95,10 @@ button {
     max-width: 200px;
     font-size: 16px;
     cursor: pointer;
-    background-color: white;
+    background-color: #368d98;
     color: black;
-    border: 0px;
+    border: 2px;
+    border-color: #368d98;
+    border-style: solid;
     border-radius: 15px;
 }

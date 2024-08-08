@@ -2,12 +2,25 @@
 <html lang="en">
 
 <head>
-    <title>Custom Audio Player with Loading Bar and Volume Control</title>
-    <link rel="stylesheet" href="../../songstyle.css" />
+    <title>Aarushiswinner Yo - Horror | ArDa DubSnake</title>
+    <link rel="stylesheet" href="../../songstyle.css">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styling.css">
 </head>
 
 <body>
-    <div class="audio-container">
+    <div class="coverImage" style="background-image: url(../../Backgrounds/Aarushiswinner\ Yo/Horror.jpg);">
+        <img src="../../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover"></div>
+        <div style="background-color: #1b1b1b; border-radius: 15px; margin: 10px; height: 225px; width: 98%;">z
+        <div class="songtitle"><a href="./Horror.html">Horror</a>
+        <div class="songartist"><a href="../AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+        <div class="genre"><a href="../../Genres/Trap.html">Trap</a></div>
+        <div class="releaseDate">Released: 20/07/2024</div></div>
+    </div>
+    <a href="./Horror.mp3" download="Aarushiswinner Yo - Horror.mp3">
+        <div class="text" id="dwntext" style="width: 70px; margin-left: 10px;">Download</div>
+    </a>
+    <div class="audio-container" style="margin-left: 10px;">
         <audio id="myAudio">
             <source src="Horror.mp3"
                     type="audio/mpeg" />
@@ -18,14 +31,14 @@
                   Play
               </button>
             <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-bar" id="progressBar" style="background-color: #368d98;"></div>
             </div>
         </div>
 
         <div class="volume-container">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" 
                  aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                 fill="currentColor" viewBox="0 0 24 24">
+                 fill="white" viewBox="0 0 24 24">
                 <path
                     d="M13 6a2 2 0 0 0-3.3-1.5l-4 3.4H4a2 2 
                        0 0 0-2 2V14c0 1.2.9 2 2 2h1.6l4.1 
@@ -43,7 +56,7 @@
             </svg>
 
             <input type="range" min="0" max="1" 
-                   step="0.1" value="0.7" id="volumeControl" />
+                   step="0.1" value="0.7" id="volumeControl"/>
         </div>
     </div>
     <script src="../../player.js"></script>

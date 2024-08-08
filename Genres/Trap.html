@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Trap - ArDa Dubsnake</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styling.css">
 </head>
 
 <script>
@@ -19,316 +20,6 @@
   contained.style.up = -(containedYinit * per * 1.25) + tri1XInitial +  "px";
   });
 </script>
-
-<style>
-html,
-body {
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-text: center;
-    color: white;
-    overflow-x: hidden;
-    max-width: 100%;
-    background: black;
-}
-a:link, a:visited{
-color: white;
-background-color: transparent;
-text-decoration: none;
-}
-
-a:active, a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-h1{
-color: white;
-color: white;
-margin-left: 50%;
-font-size: 35px;
-}
-
-h2{
-color: yellow;
-}
-
-.container {
-  background-color: black;
-  transition: .5s ease;
-  position: relative;
-  width: 95%;
-  height: 220px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background: #1e1e1e;
-  border-radius: 15px;
-}
-
-.songtitle{
-color: white;
-font-size: 80px;
-transition: .5s ease;
-top: 50%;
-left: 75%;
-padding: 10px 20px;
-text-decoration: none;
-}
-
-.topnav {
-transition: 0.5s ease;
-border-radius: 5px;
-background: #1e1e1e;
-display: flex;
-flex-direction: row;
-}
-
-.topnavhome{
-transition: 0.5s ease;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 0px;
-border-top-right-radius: 0px;
-font-size: 15px;
-padding: 10px 30px;
-background: #2b2b2b;
-color: white;
-margin: 1px;
-}
-
-.topnav a{
-color: white;
-background-color: transparent;
-text-decoration: none;
-}
-.topnavgenres{
-flex-direction: column;
-transition: 1s ease;
-border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 5px;
-font-size: 15px;
-padding: 10px 30px;
-background: #2b2b2b;
-color: white;
-display: inline-grid;
-grid-template-columns: 1fr 0fr;
-text-align: center;
-margin: 1px;
-max-height: 700px;
-}
-.topnavgenredrop{
-transition: 1s ease;
-display: block;
-opacity: 0%;
-padding: inherit inherit;
-font-size: 0px;
-background: #2b2b2b;
-color: white;
-margin: 0px;
-max-height: 70px;
-}
-
-.topnavhome:hover{
-background: #4b4b4b;
-border-radius: 5px;
-border-top-right-radius: 5px;
-animation-name: rgbcycle;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-}
-
-.topnavgenres:hover{
-text-align: center;
-padding: 10px 30px;
-font-size: 20px;
-grid-template-columns: 1fr 1fr;
-animation-name: rgbcycle;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-margin: 2px;
-border-radius: 5px;
-}
-
-.topnavgenres:hover .topnavgenredrop{
-opacity: 100%;
-font-size: 20px;
-padding: 10px 30px;
-border-radius: 5px;
-text-align: center;
-margin: 5px;
-}
-
-.topnavgenredrop:hover{
-text-align: center;
-background: #4b4b4b;
-animation-name: rgbcycle;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-}
-
-@keyframes rgbcycle{
-0% {color: red}
-16.5% {color: yellow}
-33% {color: cyan}
-66% {color: #58f565}
-100% {color: red}
-}
-
-@keyframes rgbcyclebg{
-0% {background: red; border: red;}
-16.5% {background: yellow; border: yellow;}
-33% {background: cyan; border: cyan;}
-66% {background: #58f565; border: #58f565;}
-100% {background: red; border: red;}
-}
-
-.songartist{
-transition: 0.5s ease;
-color: white;
-font-size: 25px;
-text-decoration: none;
-}
-
-.genre{
-transition: 0.5s ease;
-color: white;
-font-size: 20px;
-text-decoration: none;
-}
-.releaseDate{
-transition: 0.5s ease;
-color: white;
-font-size: 20px;
-text-decoration: none;
-}
-
-.bgimg{
-position: static;
-width: 100%;
-height: 500px;
-}
-
-.image {
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  width: 220px;
-  height: 220px;
-  border-radius: 15px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 80%;
-  left: 305px;
-  border-radius: 15px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover {
-width: 99%;
-height: 300px;
-}
-
-.container:hover .image {
-  opacity: 1;
-  width: 300px;
-  height: 300px;
-}
-
-.container:hover .middle {
-  opacity: 1;
-  top: 85%;
-  left: 385px;
-}
-
-.container:hover  .songtitle{
-font-size: 50px;
-text-decoration: none;
-display: flex;
-flex-direction: column;
-}
-
-.container:hover  .songartist{
-font-size: 35px;
-text-decoration: none;
-}
-
-.container:hover  .genre{
-font-size: 20px;
-text-decoration: none;
-}
-
-.container:hover  .releaseDate{
-font-size: 20px;
-text-decoration: none;
-}
-
-.text {
-  transition: 1s ease;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border: 2px red;
-  border-style: solid;
-  border-radius: 15px;
-  padding: 16px 35px;
-}
-
-.text:hover {
-animation-name: rgbcyclebg;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-color: black;
-}
-
-::-webkit-scrollbar {
-  width: 13px;
-  border-radius: 5px;
-  transition: 1s ease;
-  transform: translate(-50%, -50%);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #212121;
-  border-radius: 5px;
-  transition: 1s ease;
-  transform: translate(-50%, -50%);
-
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3.5px;
-  transition: 1s ease;
-  transform: translate(-50%, -50%);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  border-radius: 5px;
-  transition: 1s ease;
-}
-</style>
-
 <body>
 <div class="topnav">
   <a href="../homepage.html">
@@ -364,11 +55,9 @@ color: black;
     <a href="../Genres/Other.html"><div class="topnavgenredrop">Other</div></a>
   </div>
 </div>
-
-<img src="../Covers/Genres/Trap.jpg" class="bgimg">
 <span style="background-color: black;">
 <div class="container">
-  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image">
   <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -380,7 +69,7 @@ color: black;
 </div>
 
 <div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image"></a>
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -391,7 +80,7 @@ color: black;
   </div>
 </div>
 <div class="container">
-  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image">
   <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -403,29 +92,7 @@ color: black;
 </div>
 
 <div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
-      <div class="text">Download</div>
-  </div></a>
-  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
-  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
-  <div class="genre"><a href="./Trap.html">Trap</a></div>
-  <div class="releaseDate">Released: 16/07/2024</div>
-  </div>
-</div><div class="container">
-  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
-  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
-      <div class="text">Download</div>
-  </div></a>
-  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
-  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
-  <div class="genre"><a href="./Trap.html">Trap</a></div>
-    <div class="releaseDate">Released: 20/07/2024</div>
-  </div>
-</div>
-
-<div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image"></a>
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -435,7 +102,7 @@ color: black;
   <div class="releaseDate">Released: 16/07/2024</div>
   </div>
 </div><div class="container">
-  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image">
   <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -447,7 +114,7 @@ color: black;
 </div>
 
 <div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image"></a>
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -457,7 +124,7 @@ color: black;
   <div class="releaseDate">Released: 16/07/2024</div>
   </div>
 </div><div class="container">
-  <img src="../Covers/none/default3.jpg" alt="Cover" class="image" style="width=100%">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image">
   <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
@@ -469,7 +136,29 @@ color: black;
 </div>
 
 <div class="container">
-  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image" style="width=100%"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image"></a>
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/Horror.html">Horror</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+  <div class="releaseDate">Released: 16/07/2024</div>
+  </div>
+</div><div class="container">
+  <img src="../Covers/none/default3.jpg" alt="Cover" class="image">
+  <a href="../Songs/Aarushiswinner Yo/Don't Back Off.mp3" download="Aarushiswinner Yo - Don't Back Off.mp3"><div class="middle">
+      <div class="text">Download</div>
+  </div></a>
+  <div class="songtitle"><a href="../Songs/Aarushiswinner Yo/DontBackOff.html">Don't Back Off</a>
+  <div class="songartist"><a href="../Songs/AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+  <div class="genre"><a href="./Trap.html">Trap</a></div>
+    <div class="releaseDate">Released: 20/07/2024</div>
+  </div>
+</div>
+
+<div class="container">
+  <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.html"><img src="../Covers/Aarushiswinner Yo/Horror.jpg" alt="Cover" class="image"></a>
   <a href="./Songs/Aarushiswinner Yo/Good Times Ahead.mp3" download="Aarushiswinner Yo - Good Times Ahead.mp3"><div class="middle">
       <div class="text">Download</div>
   </div></a>
