@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aarushiswinner Yo - Darkness | ArDa DubSnake</title>
+    <link rel="stylesheet" href="../../songstyle.css">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styling.css">
+</head>
+
+<body>
+    <div class="coverImage" style="background-image: url(../../Backgrounds/Aarushiswinner\ Yo/Darkness.jpg);">
+        <img src="../../Covers/Aarushiswinner Yo/Haunted - The Album.jpg" alt="Cover"></div>
+        <div style="background-color: #1b1b1b; border-radius: 15px; margin: 10px; height: 225px; width: 98%;">
+        <div class="songtitle"><a href="./Darkness.html">Darkness</a>
+        <div class="songartist"><a href="../AarushiswinnerYo.html">Aarushiswinner Yo</a></div>
+        <div class="genre"><a href="../../Genres/Trap.html">Trap</a></div>
+        <div class="releaseDate">Released: 20/07/2024</div>
+        <div class="releaseDate" style="padding: 5px; background: red; width: 126px; margin-top: 5px; margin-left: -5px; border-radius: 15px;"><a href="https://www.youtube.com/watch?v=Abs-eyKoNMU">YouTube Video</a></div></div>
+    </div>
+    <a href="./Darkness.mp3" download="Aarushiswinner Yo - Darkness.mp3">
+        <div class="text" id="dwntext" style="width: 70px; margin-left: 10px; text-decoration: none;">Download</div>
+    </a>
+    <div class="audio-container" style="margin-left: 10px;">
+        <audio id="myAudio">
+            <source src="Darkness.mp3">
+                    type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls" style="background-color: #1b1b1b; border-radius: 15px; width: 900px; padding: 5px;">
+            <button id="playPauseBtn" class="play">
+                  Play
+              </button>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar" style="background-color: #368d98;"></div>
+            </div>
+        </div>
+
+        <div class="volume-container" style="background-color: #1b1b1b; border-radius: 15px;">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" 
+                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 fill="white" viewBox="0 0 24 24">
+                <path
+                    d="M13 6a2 2 0 0 0-3.3-1.5l-4 3.4H4a2 2 
+                       0 0 0-2 2V14c0 1.2.9 2 2 2h1.6l4.1 
+                       3.5A2 2 0 0 0 13 18V6Z" />
+                <path fill-rule="evenodd"
+                    d="M14.8 7.7a1 1 0 0 1 1.4 0 6.1 6.1 0 
+                       0 1 0 8.6 1 1 0 0 1-1.3 0 1 1 0 0 1 
+                       0-1.5 4 4 0 0 0-.1-5.7 1 1 0 0 1 0-1.4Z"
+                    clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                    d="M17.7 4.8a1 1 0 0 1 1.4 0 10.2 10.2 
+                       0 0 1 0 14.4 1 1 0 0 1-1.4 0 1 1 0 0 
+                       1 0-1.4 8.2 8.2 0 0 0 0-11.6 1 1 0 0 1 0-1.4Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <input type="range" min="0" max="1" 
+                   step="0.1" value="0.7" id="volumeControl"/>
+        </div>
+    </div>
+    <script src="../../player.js"></script>
+</body>
+
+</html>
